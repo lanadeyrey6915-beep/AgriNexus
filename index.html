@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10131b">
+<title>AGRI NEXUS — The Future Grows Here</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<header class="topbar">
+  <a class="brand" href="#home"><span class="brand-mark">A<span>✳</span></span><span>AGRI<br><b>NEXUS</b></span></a>
+  <nav><a href="#vision">VISION</a><a href="#systems">SYSTEMS</a><a href="#fieldlab">FIELD LAB</a><a href="#connect">CONNECT</a></nav>
+  <button class="menu-btn" id="menuBtn">MENU <span>＋</span></button>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-kicker"><span class="pulse-dot"></span> INTELLIGENT AGRICULTURE / PROJECT 001</div>
+  <div class="hero-title-wrap">
+    <h1>THE FUTURE<br><em>GROWS</em> HERE<span class="title-dot">.</span></h1>
+    <div class="hero-side-note">A LIVING ECOSYSTEM<br>OF IDEAS, SENSORS<br>& SMART MACHINES.</div>
+  </div>
+  <div class="hero-art">
+    <div class="hero-image"></div>
+    <div class="hero-stamp"><span>AGRI</span><b>NEXUS</b><small>FIELD INTELLIGENCE<br>EST. 2026</small></div>
+    <div class="hero-caption"><span>01 / 04</span><span>GROW SMARTER. LIVE BETTER.</span><span>SCROLL TO EXPLORE ↓</span></div>
+    <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+  </div>
+  <div class="hero-bottom"><p>Not just a farm. A connected world where<br>technology helps nature thrive.</p><a class="round-link" href="#vision">EXPLORE <span>↘</span></a><div class="vertical-word">AGRICULTURE × INTELLIGENCE</div></div>
+</section>
+
+<!-- Scroll-driven cinematic sequence: added without replacing the original Agri Nexus design. -->
+<section class="scroll-film" id="nexusFilm" aria-label="Agri Nexus cinematic scroll sequence">
+  <div class="film-sticky">
+    <video class="film-video" id="filmVideo" muted playsinline preload="metadata" poster="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=85" aria-hidden="true">
+      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260729_102822_0e6c87e8-c141-4744-bf32-ad30db296371.mp4" type="video/mp4">
+    </video>
+    <div class="film-video-tint"></div>
+    <canvas class="film-canvas" id="filmCanvas" aria-hidden="true"></canvas>
+    <div class="film-glass-chip chip-soil"><span>01 / SOIL</span><b>NPK + MOISTURE</b></div>
+    <div class="film-glass-chip chip-water"><span>02 / WATER</span><b>QUALITY SIGNAL</b></div>
+    <div class="film-glass-chip chip-climate"><span>03 / CLIMATE</span><b>FIELD CONDITIONS</b></div>
+    <div class="film-grain"></div>
+    <div class="film-topline"><span>AGRI NEXUS / THE CONNECTED FIELD</span><span id="filmStep">01 — ORIGIN</span></div>
+    <div class="film-copy film-copy-one"><span class="film-kicker">EVERYTHING BEGINS BENEATH US</span><h2>ROOTED IN<br><i>THE EARTH.</i></h2><p>One small signal can reveal a much bigger story.</p></div>
+    <div class="film-copy film-copy-two"><span class="film-kicker">SENSORS BECOME SIGNALS</span><h2>SEE THE<br><i>UNSEEN.</i></h2><p>Soil. Water. Climate. Life. Connected as one.</p></div>
+    <div class="film-copy film-copy-three"><span class="film-kicker">INTELLIGENCE IN MOTION</span><h2>GROW<br><i>CONNECTED.</i></h2><p>Agri Nexus brings the whole field into focus.</p><a href="#systems" class="film-link">EXPLORE THE ECOSYSTEM ↘</a></div>
+    <div class="film-progress"><span>SCROLL TO TRANSFORM</span><div><i id="filmProgress"></i></div><span>02 / 06</span></div>
+  </div>
+</section>
+
+<section class="manifesto section-pad" id="vision">
+  <div class="section-index">[ 01 — THE IDEA ]</div>
+  <div class="manifesto-grid">
+    <h2>WE DON'T<br>JUST <span>GROW</span><br>FOOD<span class="red">.</span></h2>
+    <div class="manifesto-copy"><p class="big-copy">We grow possibilities.</p><p>Agri Nexus brings soil intelligence, climate sensing, smart machines, aerial observation and farmer connectivity into one living system.</p><p class="mono">ONE FIELD. MANY SIGNALS. BETTER DECISIONS.</p><a class="text-link" href="#systems">MEET THE ECOSYSTEM <b>↗</b></a></div>
+  </div>
+  <div class="manifesto-strip"><span>SOIL</span><b>✳</b><span>WATER</span><b>✳</b><span>CLIMATE</span><b>✳</b><span>BIODIVERSITY</span><b>✳</b><span>INTELLIGENCE</span></div>
+</section>
+
+<section class="systems section-pad" id="systems">
+  <div class="section-head"><div class="section-index">[ 02 — THE ECOSYSTEM ]</div><h2>MEET YOUR<br><i>FIELD CREW.</i></h2><p>Tap a system. Explore what it sees, senses and makes possible.</p></div>
+  <div class="system-grid">
+    <button class="system-card soil" data-system="soil"><span class="card-no">01 / BELOW</span><div class="system-visual soil-visual"><div class="soil-ring"></div><div class="plant">♧</div><span class="floating-tag">N · P · K</span></div><div class="system-info"><h3>SOIL<br>INTELLIGENCE</h3><span>Read the ground beneath us ↗</span></div></button>
+    <button class="system-card climate" data-system="climate"><span class="card-no">02 / AROUND</span><div class="system-visual climate-visual"><div class="sun"></div><div class="cloud">☁</div><span class="temp">28°</span></div><div class="system-info"><h3>CLIMATE<br>STATION</h3><span>Feel the atmosphere ↗</span></div></button>
+    <button class="system-card water" data-system="water"><span class="card-no">03 / THROUGH</span><div class="system-visual water-visual"><div class="water-drop">◉</div><div class="wave w1"></div><div class="wave w2"></div><span class="floating-tag">PURE FLOW</span></div><div class="system-info"><h3>WATER<br>WATCH</h3><span>Keep every drop in focus ↗</span></div></button>
+    <button class="system-card bot" data-system="bot"><span class="card-no">04 / ON THE MOVE</span><div class="system-visual bot-visual"><div class="bot-shape"><span>AG</span></div><div class="bot-beam"></div><span class="floating-tag">ROVER 01</span></div><div class="system-info"><h3>AGRI<br>ROVER</h3><span>Let the machine explore ↗</span></div></button>
+    <button class="system-card drone" data-system="drone"><span class="card-no">05 / ABOVE</span><div class="system-visual drone-visual"><div class="drone-shape">✣</div><div class="drone-path"></div><span class="floating-tag">SKY VIEW</span></div><div class="system-info"><h3>DRONE<br>OBSERVATION</h3><span>See the bigger picture ↗</span></div></button>
+    <button class="system-card vision" data-system="vision"><span class="card-no">06 / IN SIGHT</span><div class="system-visual vision-visual"><div class="scan-frame"></div><div class="leaf-art">❧</div><span class="scan-label">SCANNING...</span></div><div class="system-info"><h3>CROP<br>VISION AI</h3><span>Look closer at every leaf ↗</span></div></button>
+  </div>
+  <div class="system-extra"><div class="extra-tile biodiversity"><span>07 / LIFE AROUND THE FIELD</span><h3>BIODIVERSITY<br>NETWORK</h3><p>Healthy fields are living communities.</p><span class="extra-icon">✺</span></div><div class="extra-tile farmer"><span>08 / PEOPLE FIRST</span><h3>FARMER<br>CONNECT</h3><p>Useful information should reach everyone.</p><span class="extra-icon">↗</span></div></div>
+</section>
+
+<section class="interlude">
+  <div class="interlude-image"></div><div class="interlude-text"><span class="section-index">[ A DIFFERENT WAY TO FARM ]</span><h2>LISTEN TO<br>THE <i>LAND.</i></h2><p>Every sensor is a signal. Every signal can help tell a better story about the field.</p><a href="#fieldlab" class="cream-button">ENTER FIELD LAB ↘</a></div>
+  <div class="interlude-number">02—08</div>
+</section>
+
+<section class="fieldlab section-pad" id="fieldlab">
+  <div class="section-head lab-head"><div class="section-index">[ 03 — INTERACTIVE FIELD LAB ]</div><h2>PLAY WITH<br>THE <i>DATA.</i></h2><p>Explore a live-style demonstration of the Agri Nexus ecosystem.</p></div>
+  <div class="lab-layout">
+    <div class="lab-console">
+      <div class="console-top"><span><i class="live-dot"></i> FIELD NODE / DEMO MODE</span><span>ZONE A — INDIA</span></div>
+      <div class="field-map"><div class="map-grid"></div><div class="field-lines"></div><div class="map-pin pin-a">A</div><div class="map-pin pin-b">B</div><div class="map-pin pin-c">C</div><div class="map-label">NEXUS FIELD<br><small>DEMO TOPOGRAPHY</small></div><div class="map-scan"></div></div>
+      <div class="console-foot"><span>NETWORK <b>● SIMULATED</b></span><span>LAST SYNC <b id="clock">--:--:--</b></span><span>NODE <b>NX-001</b></span></div>
+    </div>
+    <div class="data-panel">
+      <div class="data-heading"><span>FIELD CONDITIONS</span><span class="demo-pill">DEMO VALUES</span></div>
+      <div class="metric"><div><small>SOIL MOISTURE</small><strong id="moistureValue">64</strong><small>% / VOLUMETRIC</small></div><div class="meter"><span id="moistureBar"></span></div></div>
+      <div class="metric"><div><small>TEMPERATURE</small><strong id="tempValue">28.4</strong><small>°C / DHT22</small></div><div class="metric-icon orange">☼</div></div>
+      <div class="metric"><div><small>HUMIDITY</small><strong id="humidityValue">71</strong><small>% / DHT22</small></div><div class="metric-icon blue">≈</div></div>
+      <div class="metric"><div><small>SOIL PROFILE</small><strong class="npk-value">N 42 <i>·</i> P 26 <i>·</i> K 58</strong><small>ILLUSTRATIVE INDEX</small></div><div class="metric-icon green">✳</div></div>
+      <div class="data-actions"><button id="refreshData">↻ REFRESH DEMO</button><button id="randomizeData">✳ GENERATE NEW FIELD</button></div>
+    </div>
+  </div>
+  <div class="controls-row">
+    <div class="control-card"><div class="control-title"><span>ROVER CONTROL</span><span class="demo-pill">SIMULATOR</span></div><div class="rover-stage"><div class="rover-mini" id="roverMini">▰</div><span>VIRTUAL MOVEMENT ONLY</span></div><div class="direction-pad"><button data-move="up">↑</button><button data-move="left">←</button><button data-move="stop">■</button><button data-move="right">→</button><button data-move="down">↓</button></div><p id="roverStatus" class="status-line">Rover idle · awaiting input</p></div>
+    <div class="control-card water-control"><div class="control-title"><span>WATER FLOW</span><span class="demo-pill">SIMULATOR</span></div><div class="water-graphic"><div class="pipe"></div><div class="drop">●</div></div><div class="switch-line"><div><b>PUMP RELAY</b><small>Virtual switch — no hardware action</small></div><button class="toggle" id="pumpToggle" aria-pressed="false"><span></span></button></div><p id="pumpStatus" class="status-line">Pump simulation is OFF</p></div>
+    <div class="control-card"><div class="control-title"><span>WATER QUALITY</span><span class="demo-pill">SIMULATOR</span></div><div class="quality-number"><strong id="turbidityValue">32</strong><small>NTU / DEMO</small></div><input type="range" id="turbiditySlider" min="0" max="100" value="32"><div class="range-labels"><span>CLEAR</span><span>CLOUDY</span></div><p id="waterStatus" class="status-line">Illustrative reading: relatively clear</p></div>
+  </div>
+</section>
+
+<section class="vision-section">
+  <div class="vision-photo"></div><div class="vision-content"><span class="section-index">[ 04 — CROP VISION STUDIO ]</span><h2>GIVE YOUR<br>CROP A <i>CLOSER LOOK.</i></h2><p>Drop in a crop photo to preview the image-analysis experience. This local demo does not diagnose plant disease.</p>
+    <label class="upload-zone" for="cropUpload"><span class="upload-symbol">＋</span><b>DROP A CROP IMAGE HERE</b><small>OR CLICK TO CHOOSE A PHOTO</small><input type="file" id="cropUpload" accept="image/*"></label>
+    <div class="preview-wrap" id="previewWrap"><img id="cropPreview" alt="Selected crop preview"><span>IMAGE LOADED — ANALYSIS CONNECTION NOT CONFIGURED</span></div>
+  </div>
+</section>
+
+<section class="connect section-pad" id="connect">
+  <div class="section-index">[ 05 — PEOPLE & POSSIBILITY ]</div><div class="connect-grid"><h2>TECHNOLOGY<br>THAT <i>REACHES</i><br>EVERYONE<span class="red">.</span></h2><div class="connect-copy"><p>Agri Nexus is designed around a simple belief: useful agricultural information should not depend on owning an expensive smartphone.</p><div class="connect-options"><div><span>01</span><b>PHONE PORTAL</b><small>Simple, clear information for connected farmers.</small></div><div><span>02</span><b>COMMUNITY ACCESS</b><small>Shared kiosk or assisted access point.</small></div><div><span>03</span><b>FIELD OFFICE LINK</b><small>A pathway for information to reach agricultural support teams.</small></div></div><button class="outline-button" id="connectBtn">EXPLORE THE CONNECTION ↗</button></div></div>
+</section>
+
+<footer><div class="footer-top"><div class="footer-brand">AGRI<br><i>NEXUS.</i></div><div class="footer-note">A connected vision<br>for a growing world.</div><a href="#home" class="back-top">BACK TO TOP ↑</a></div><div class="footer-bottom"><span>AGRI NEXUS / STUDENT INNOVATION PROJECT</span><span>DESIGNED TO GROW BEYOND THE ORDINARY ✳</span><span>© 2026</span></div></footer>
+</main>
+
+<div class="modal" id="systemModal"><div class="modal-card"><button class="modal-close" id="modalClose">×</button><span class="section-index" id="modalKicker">SYSTEM / 01</span><h2 id="modalTitle">SOIL INTELLIGENCE</h2><p id="modalDescription"></p><div class="modal-specs" id="modalSpecs"></div><small class="modal-note">PROJECT CONCEPT · LIVE HARDWARE CONNECTION NOT YET CONFIGURED</small></div></div>
+<div class="toast" id="toast">DEMO DATA UPDATED ✳</div>
+<script src="app.js"></script>
+</body></html>
